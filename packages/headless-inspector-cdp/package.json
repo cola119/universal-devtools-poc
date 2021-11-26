@@ -1,0 +1,31 @@
+{
+  "name": "headless-inspector-cdp",
+  "version": "0.1.2",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "headless-inspector-core": "0.1.2"
+  },
+  "devDependencies": {
+    "devtools-protocol": "0.0.937139"
+  },
+  "scripts": {
+    "clean": "rm -rf dist ./tsconfig.tsbuildinfo",
+    "build": "tsc",
+    "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cola119/universal-inspector-poc"
+  },
+  "author": "",
+  "license": "ISC"
+}

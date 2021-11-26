@@ -1,0 +1,28 @@
+{
+  "name": "universal-devtools",
+  "workspaces": [
+    "packages/headless-inspector-core",
+    "packages/headless-inspector-cdp",
+    "packages/universal-devtools"
+  ],
+  "scripts": {
+    "build": "npm run clean -ws && npm run build -ws",
+    "start": "npm run build && npm run serve -w universal-devtools",
+    "lint": "npm run lint -ws",
+    "test": "jest",
+    "format": "prettier --write .",
+    "test:watch": "npm run test -- --watch",
+    "code-check": "npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.2",
+    "@typescript-eslint/eslint-plugin": "5.3.0",
+    "@typescript-eslint/parser": "5.3.0",
+    "eslint": "8.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "jest": "27.3.1",
+    "prettier": "2.4.1",
+    "ts-jest": "27.0.7",
+    "typescript": "4.4.4"
+  }
+}
