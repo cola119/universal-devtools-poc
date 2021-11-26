@@ -117,10 +117,8 @@ const main = () => {
     () => {
       console.log(
         `### Universal DevTools ###
-Please add <script src="http://${
-          privateIp ?? '{your IP address}'
-        }:9222/script.js"></script> to the debug target application.
-And then, open: chrome://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222`
+Private IP address: ${privateIp}
+client: chrome://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222`
       );
     }
   );

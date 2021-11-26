@@ -5,18 +5,15 @@ import {
   interceptNetwork,
 } from 'headless-inspector-core';
 
-const enableInspector = async (wsUrl: string) => {
-  const inspector = createInspector();
-  interceptConsole(inspector);
-  interceptNetwork(inspector);
-  await withCDP(inspector, wsUrl);
-};
+class UnviersalDevTools {
+  constructor(private wsUrl: string) {}
 
-const main = async () => {
-  await enableInspector('ws://localhost:9222');
-  console.log('Headless Inspector has been enabled');
-};
+  async start() {
+    const inspector = createInspector();
+    interceptConsole(inspector);
+    interceptNetwork(inspector);
+    return await withCDP(inspector, this.wsUrl);
+  }
+}
 
-window.addEventListener('load', () => {
-  main();
-});
+export default UnviersalDevTools;

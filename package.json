@@ -7,7 +7,9 @@
   ],
   "scripts": {
     "build": "npm run clean -ws && npm run build -ws",
-    "start": "npm run build && npm run serve -w universal-devtools",
+    "serve": "npm run serve -w universal-devtools",
+    "start": "npm run build && npm run serve",
+    "example": "node example/server.js",
     "lint": "npm run lint -ws",
     "test": "jest",
     "format": "prettier --write .",
