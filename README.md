@@ -16,6 +16,6 @@ $ npm run start
 $ npm run example
 ```
 
-Open `chrome://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222`
+Open `chrome://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222` or `devtools://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222` (for latest Chrome)
 
 And `http://{your ip address}:3000`
