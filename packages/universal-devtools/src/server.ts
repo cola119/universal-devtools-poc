@@ -118,7 +118,9 @@ const main = () => {
       console.log(
         `### Universal DevTools ###
 Private IP address: ${privateIp}
-client: chrome://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222`
+client: chrome://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222
+      : devtools://devtools/bundled/inspector.html?experiments=true&ws=localhost:9222
+`
       );
     }
   );
