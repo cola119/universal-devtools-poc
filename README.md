@@ -4,6 +4,7 @@
 
 ```sh
 $ git clone git@github.com:cola119/universal-devtools-poc.git
+$ cd universal-devtools-poc
 $ nvm use
 $ npm install
 ```
